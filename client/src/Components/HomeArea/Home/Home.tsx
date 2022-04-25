@@ -25,19 +25,4 @@ function Home(): JSX.Element {
 
 export default Home;
 
-// function Home(): JSX.Element {
-//     const [status, setStatus] = useState<string>("login");
 
-//     return (
-//         <div className="Home" >
-//             {/* <img src={earth} alt="cruise" /> */}
-
-//             {status === "login" && <Login changeStatus={(status: string) => setStatus(status)} />}
-
-//             {status === "register" && <Register changeStatus={(status: string) => setStatus(status)} />}
-//         </div>
-
-//     );
-// }
-
-// export default Home;

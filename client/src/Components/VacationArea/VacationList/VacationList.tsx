@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, useEffect } from "react";
 import "./VacationList.css";
 import { NavLink } from "react-router-dom";
 import VacationCard from "../VacationCard/VacationCard";
@@ -9,11 +9,10 @@ import followersService from "../../../Services/FollowersService";
 import { FetchVacationsAction } from "../../../Redux/VacationsState";
 import { Unsubscribe } from "redux";
 import notifyService from "../../../Services/NotifyService";
-
+import React from 'react'
 interface VacationListState {
     vacations: VacationModel[];
 }
-
 class VacationList extends Component<{}, VacationListState> {
     // private unsubscribeMe: Unsubscribe;
     private unsubscribeMe: any;
@@ -40,6 +39,7 @@ class VacationList extends Component<{}, VacationListState> {
             const vacations2 = vacations.filter(vac1 => !vac1.isFollowed)
             const sortedVacations = vacations1.concat(vacations2);
             this.setState({ vacations: sortedVacations });
+          
 
             //  listen for changes in redux socket
             this.unsubscribeMe = vacationsStore.subscribe(async () => {
@@ -63,8 +63,6 @@ class VacationList extends Component<{}, VacationListState> {
                 this.setState({ vacations: sortedVacations });
             });
         }
-
-
         catch (err: any) {
             notifyService.error(err);
         }
@@ -78,7 +76,7 @@ class VacationList extends Component<{}, VacationListState> {
     }
 
     public componentWillUnmount(): void {
-        this.unsubscribeMe();
+        this.unsubscribeMe();        
     }
 
     public render(): JSX.Element {

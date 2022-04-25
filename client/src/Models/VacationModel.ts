@@ -1,5 +1,5 @@
 class VacationModel {
-    public id: number| undefined; ;
+    public id: number | undefined;
     public description: string | undefined;
     public destination: string | undefined;
     public imageName: string | undefined;

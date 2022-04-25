@@ -61,7 +61,6 @@ class VacationsService {
         await axios.delete(config.urls.vacations + id); 
         vacationsStore.dispatch(deleteVacationAction(id));
     }
-
 }
 
 // Single object:
