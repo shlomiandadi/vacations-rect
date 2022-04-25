@@ -1,0 +1,105 @@
+.Plane .container {
+  margin: 5px;
+  top:5px;
+  width:95%;
+  height: 70px;
+}
+.Plane .cloud1 img {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 10%;
+  z-index: -10000 !important;
+}
+
+.Plane .cloud2 img {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 10%;
+  z-index: -10000 !important;
+}
+
+.Plane .cloud3 img {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 7%;
+  z-index: -10000 !important;
+}
+
+.Plane .cloud4 img {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 7%;
+  z-index: -10000 !important;
+}
+
+.Plane .plane img {
+  width: 7%;
+  top: 10rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
+  z-index: -10000 !important;
+}
+
+.Plane .container .cloud1 {
+  position: absolute;
+  animation: cloudOne infinite 20s linear;
+}
+
+.Plane .container .cloud2 {
+  position: absolute;
+  top: 1px;
+  left: 80px;
+  animation: cloudOne infinite 25s linear;
+}
+
+.Plane .container .cloud3 {
+  position: absolute;
+  top: 1px;
+  left: 80px;
+  animation: cloudOne infinite 25s linear;
+}
+
+.Plane .container .cloud4 {
+  position: absolute;
+  top: 1px;
+  left: 80px;
+  animation: cloudOne infinite 25s linear;
+}
+
+.Plane .container .plane {
+  animation: plane infinite 20s linear;
+}
+
+@keyframes cloudOne {
+  0% {
+    transform: translateX(-80%);
+  }
+
+  100% {
+    transform: translateX(60%);
+  }
+}
+
+@keyframes plane {
+  0% {
+    transform: translateX(-90%);
+  }
+
+  100% {
+    transform: translateX(50%);
+  }
+}

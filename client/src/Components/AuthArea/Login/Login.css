@@ -1,0 +1,63 @@
+.Login {
+  position:relative;
+  z-index: 3;  
+  color: rgb(20, 20, 20)
+
+}
+.Login > form  {
+	width: 250px;
+    padding-bottom: 15px;
+}
+
+.Login input, .Login button {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+}
+
+.Login span {
+    color: red;
+    position: absolute;
+    margin: 0 20px;
+    min-width: 130px;
+    max-width: 200px;
+}
+
+.Login u {
+    cursor: pointer;
+}
+
+.Login label {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.Login input[type="text"], .Login input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: rgb(20, 20, 20);
+}
+
+.Login button {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 1px #000;
+    font-size: 1.4rem;
+
+}

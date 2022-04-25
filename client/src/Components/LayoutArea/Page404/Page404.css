@@ -1,0 +1,19 @@
+.Page404 {
+    color:#65676B;
+    line-height: 1.34;
+    font-size: 24px;
+    justify-content:center;
+    margin-top: 3%;
+}
+
+.Page404 a {
+    font-size: 24px;
+    color: #216FDB;
+    font-weight: 600
+}
+
+.Page404 .box{
+    align-items:center;
+    width: 500px;
+    margin:auto
+}

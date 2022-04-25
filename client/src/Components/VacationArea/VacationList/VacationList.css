@@ -1,0 +1,8 @@
+.VacationList > .link{
+    position: fixed;
+    top: 60px;
+    right: 10px;
+}
+.VacationList{
+    background-color: rgba(214, 247, 226, 0.602);
+}

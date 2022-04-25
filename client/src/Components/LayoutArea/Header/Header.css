@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d');
+
+
+.Header {
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(143, 248, 176);
+}

@@ -1,0 +1,39 @@
+.Layout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 15% 80% 5%;
+}
+
+.Layout,
+.Layout>* {
+    border: 1px solid black;
+}
+
+.Layout>header,
+.Layout>footer {
+    grid-column: span 6;
+}
+
+.Layout>main {
+    grid-column: span 6;
+    overflow: auto;
+}
+
+main::-webkit-scrollbar {
+    width: 1em;
+
+}
+
+main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+
+
+}
+
+main::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(28, 189, 195), #8FF8B0);
+    border-radius: 15px;
+}
