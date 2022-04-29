@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./VacationList.css";
 import { NavLink } from "react-router-dom";
 import VacationCard from "../VacationCard/VacationCard";

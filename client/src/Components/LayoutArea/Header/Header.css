@@ -7,5 +7,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(143, 248, 176);
+    background-color: rgb(143, 211, 248);
+    box-shadow: 
+    inset 0 0 50px rgba(44, 246, 223, 0.629),
+    inset 20px 0 40px #05a8ff,
+    inset -20px 0 40px #72b2f6,
+    inset 10px 0 25px rgb(0, 200, 255),
+    inset -20px 0 40px rgb(0, 255, 221),
+    0 0 50px #fff,
+    -10px 0 20px #000040,
+    10px 0 20px #0ff; 
 }

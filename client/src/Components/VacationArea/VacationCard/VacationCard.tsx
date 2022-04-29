@@ -10,7 +10,7 @@ import FollowerModel from "../../../Models/FollowerModel";
 import notifyService from "../../../Services/NotifyService";
 import { IconButton } from "@mui/material";
 import { MdOutlineHighlightOff, MdModeEditOutline } from "react-icons/md";
-import { FcLike } from "react-icons/fc";
+import { FcLike,FcLikePlaceholder } from "react-icons/fc";
 
 function VacationCard(props: any): JSX.Element {
     let isAdmin: boolean = authStore?.getState()?.user?.isAdmin ? true : false;
@@ -89,7 +89,7 @@ function VacationCard(props: any): JSX.Element {
                         ? (<>
                             <span>{props.vacation.followersCount}</span>
                             <IconButton aria-label="settings" onClick={followVacation} style={{ color: iconColor }}>
-                                <FcLike title="Follow" className='like' />
+                                {isFollowed ? <FcLike title="Follow" /> : <FcLikePlaceholder title="UnFollow" />}
                             </IconButton>
                             <br />
                         </>)

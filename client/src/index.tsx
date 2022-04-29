@@ -8,26 +8,11 @@ import interceptorsService from './Services/InterceptorsService';
 import socketIoService from './Services/SocketIoService';
 import { Provider } from "react-redux";
 import vacationsStore from './Redux/Store';
-// import * as ReactDOM from 'react-dom/client';
-
 
 interceptorsService.createInterceptors();
 socketIoService.connect();
 
-// const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-// root.render(
-//     <React.StrictMode>
-//         <BrowserRouter>
-//             <Provider store={vacationsStore}>
-//                 <Layout />
-//             </Provider>
-//         </BrowserRouter>
-//     </React.StrictMode>
-// );
-
-
 ReactDOM.render(
-
     <BrowserRouter>
         <Provider store={vacationsStore}>
             <Layout />

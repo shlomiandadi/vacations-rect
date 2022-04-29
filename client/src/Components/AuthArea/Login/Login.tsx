@@ -51,7 +51,6 @@ function Login(props: LoginProps): JSX.Element {
                 <button>Login</button>
 
                 <div onClick={() => props.changeStatus("register")}><b>Don't have an account yet? <u>Register</u></b></div>
-
             </form>
 
         </div >
