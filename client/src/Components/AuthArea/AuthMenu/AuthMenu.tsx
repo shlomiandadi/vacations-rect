@@ -26,7 +26,7 @@ function AuthMenu() {
         {state.user && (  <NavLink to="/logout" className="AuthMenu-link">Logout</NavLink>)}
 
         {/* {!state.user && (  <NavLink to="/login" className="AuthMenu-link">Login</NavLink>)} */}
-        {!state.user && (  <NavLink to="/register" className="AuthMenu-link">Register</NavLink>)}
+        {/* {!state.user && (  <NavLink to="/register" className="AuthMenu-link">Register</NavLink>)} */}
     </div>
   )
 }
